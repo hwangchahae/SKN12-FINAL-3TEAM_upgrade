@@ -1,0 +1,27 @@
+# AI 모델
+torch>=2.0.0
+transformers>=4.36.0
+accelerate>=0.24.0
+bitsandbytes>=0.41.0
+autoawq>=0.1.8
+whisperx
+vllm>=0.3.0  # Ultra-fast LLM inference engine
+
+# 웹 서버
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# 오디오 처리
+librosa>=0.10.0
+soundfile>=0.12.0
+pydub>=0.25.0
+
+# 유틸리티
+numpy>=1.24.0
+scipy>=1.11.0
+requests>=2.31.0
+pydantic>=2.4.0
+aiofiles>=23.2.0
+python-dotenv>=1.0.0
+natsort>=8.4.0

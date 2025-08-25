@@ -1,0 +1,6 @@
+{
+  "name": "ddalkkak-chrome-extension",
+  "version": "1.0.0",
+  "description": "DdalKkak Chrome Extension - 온라인 회의 플랫폼 연동",
+  "main": "dist/background.js"
+}

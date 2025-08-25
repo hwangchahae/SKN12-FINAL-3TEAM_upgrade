@@ -1,0 +1,31 @@
+# Pylint 설정 파일
+# Similarity 프로젝트용 린트 설정
+
+[MASTER]
+# ai-engine-dev 디렉토리를 Python 경로에 추가
+init-hook='import sys; import os; sys.path.append(os.path.join(os.path.dirname(os.path.abspath(".")), "ai-engine-dev"))'
+
+[MESSAGES CONTROL]
+# 특정 경고 비활성화
+disable=
+    import-error,  # 동적 임포트로 인한 경고 무시
+    import-outside-toplevel,  # 함수 내부 임포트 허용
+    too-many-locals,  # 많은 로컬 변수 허용
+    too-many-arguments,  # 많은 인자 허용
+    line-too-long,  # 긴 줄 허용
+    missing-module-docstring,  # 모듈 독스트링 선택사항
+    missing-function-docstring,  # 함수 독스트링 선택사항
+
+[FORMAT]
+# 최대 줄 길이
+max-line-length=120
+
+[BASIC]
+# 변수명 규칙
+good-names=i,j,k,f,e,_,df,ax,fig,x,y,z
+
+[DESIGN]
+# 클래스 메서드 최대 개수
+max-methods=30
+# 함수 인자 최대 개수  
+max-args=10

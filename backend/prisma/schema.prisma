@@ -1,0 +1,193 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Tenant {
+  id           String        @id @default(uuid())
+  name         String        @db.VarChar(100)
+  slug         String        @unique @db.VarChar(50)
+  createdAt    DateTime      @default(now()) @map("created_at")
+  integrations Integration[]
+  projects     Project[]
+  slackInputs  SlackInput[]
+  tasks        Task[]
+  users        User[]
+
+  @@map("tenants")
+}
+
+model User {
+  id              String              @id @default(uuid())
+  tenantId        String              @map("tenant_id")
+  email           String              @db.VarChar(255)
+  name            String              @db.VarChar(100)
+  role            UserRole            @default(MEMBER)
+  slackUserId     String?             @map("slack_user_id") @db.VarChar(50)
+  createdAt       DateTime            @default(now()) @map("created_at")
+  availableHours  Float?              @default(40) @map("available_hours")
+  experienceLevel String?             @default("junior") @map("experience_level") @db.VarChar(20)
+  jiraUserId      String?             @map("jira_user_id") @db.VarChar(100)
+  lastAssignedAt  DateTime?           @map("last_assigned_at")
+  preferredTypes  Json?               @map("preferred_types")
+  skills          Json?
+  integrations    Integration[]
+  assignmentLogs  TaskAssignmentLog[]
+  assignedTasks   Task[]              @relation("TaskAssignee")
+  tenant          Tenant              @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@unique([tenantId, email])
+  @@map("users")
+}
+
+model SlackInput {
+  id             String           @id @default(uuid())
+  tenantId       String           @map("tenant_id")
+  slackChannelId String           @map("slack_channel_id") @db.VarChar(50)
+  slackUserId    String           @map("slack_user_id") @db.VarChar(50)
+  inputType      InputType        @map("input_type")
+  createdAt      DateTime         @default(now()) @map("created_at")
+  content        String
+  status         ProcessingStatus @default(RECEIVED)
+  projects       Project[]
+  tenant         Tenant           @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@map("slack_inputs")
+}
+
+model Project {
+  id            String     @id @default(uuid())
+  tenantId      String     @map("tenant_id")
+  slackInputId  String     @map("slack_input_id")
+  title         String     @db.VarChar(200)
+  overview      String
+  content       Json
+  notionPageUrl String?    @map("notion_page_url")
+  notionStatus  String?    @map("notion_status") @db.VarChar(20)
+  createdAt     DateTime   @default(now()) @map("created_at")
+  slackInput    SlackInput @relation(fields: [slackInputId], references: [id], onDelete: Cascade)
+  tenant        Tenant     @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  tasks         Task[]
+
+  @@map("projects")
+}
+
+model Task {
+  id             String              @id @default(uuid())
+  tenantId       String              @map("tenant_id")
+  title          String              @db.VarChar(200)
+  description    String?
+  status         TaskStatus          @default(TODO)
+  assigneeId     String?             @map("assignee_id")
+  dueDate        DateTime?           @map("due_date")
+  createdAt      DateTime            @default(now()) @map("created_at")
+  updatedAt      DateTime            @updatedAt @map("updated_at")
+  completedAt    DateTime?           @map("completed_at")
+  complexity     String?             @db.VarChar(20)
+  parentId       String?             @map("parent_id")
+  priority       TaskPriority        @default(MEDIUM)
+  projectId      String              @map("project_id")
+  taskNumber     String              @map("task_number") @db.VarChar(20)
+  assignmentLogs TaskAssignmentLog[]
+  metadata       TaskMetadata?
+  assignee       User?               @relation("TaskAssignee", fields: [assigneeId], references: [id])
+  parent         Task?               @relation("TaskHierarchy", fields: [parentId], references: [id])
+  children       Task[]              @relation("TaskHierarchy")
+  project        Project             @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  tenant         Tenant              @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@unique([tenantId, taskNumber])
+  @@map("tasks")
+}
+
+model TaskMetadata {
+  id               String   @id @default(uuid())
+  taskId           String   @unique @map("task_id")
+  estimatedHours   Float?   @map("estimated_hours")
+  actualHours      Float?   @map("actual_hours")
+  requiredSkills   Json?    @map("required_skills")
+  taskType         String?  @map("task_type") @db.VarChar(50)
+  assignmentScore  Float?   @map("assignment_score")
+  assignmentReason String?  @map("assignment_reason")
+  jiraIssueKey     String?  @map("jira_issue_key") @db.VarChar(50)
+  jiraStatus       String?  @map("jira_status") @db.VarChar(20)
+  createdAt        DateTime @default(now()) @map("created_at")
+  updatedAt        DateTime @updatedAt @map("updated_at")
+  task             Task     @relation(fields: [taskId], references: [id], onDelete: Cascade)
+
+  @@map("task_metadata")
+}
+
+model Integration {
+  id           String             @id @default(uuid())
+  tenantId     String             @map("tenant_id")
+  userId       String             @map("user_id")
+  serviceType  IntegrationService @map("service_type")
+  accessToken  String?            @map("access_token")
+  isActive     Boolean            @default(true) @map("is_active")
+  createdAt    DateTime           @default(now()) @map("created_at")
+  config       Json?
+  refreshToken String?            @map("refresh_token")
+  tenant       Tenant             @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  user         User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([tenantId, userId, serviceType])
+  @@map("integrations")
+}
+
+model TaskAssignmentLog {
+  id               String   @id @default(uuid())
+  taskId           String   @map("task_id")
+  userId           String   @map("user_id")
+  assignedAt       DateTime @default(now()) @map("assigned_at")
+  assignmentScore  Float    @map("assignment_score")
+  scoreBreakdown   Json     @map("score_breakdown")
+  reason           String   @map("reason")
+  alternatives     Json?    @map("alternatives")
+  algorithmVersion String   @default("1.0") @map("algorithm_version") @db.VarChar(10)
+  task             Task     @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("task_assignment_logs")
+}
+
+enum UserRole {
+  OWNER
+  ADMIN
+  MEMBER
+}
+
+enum InputType {
+  VOICE
+  TEXT
+}
+
+enum ProcessingStatus {
+  RECEIVED
+  PROCESSING
+  COMPLETED
+  FAILED
+}
+
+enum TaskStatus {
+  TODO
+  IN_PROGRESS
+  DONE
+}
+
+enum TaskPriority {
+  HIGH
+  MEDIUM
+  LOW
+}
+
+enum IntegrationService {
+  SLACK
+  NOTION
+  JIRA
+}

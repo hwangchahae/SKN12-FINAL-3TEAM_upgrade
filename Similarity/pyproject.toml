@@ -1,0 +1,34 @@
+[tool.pyright]
+# Pyright/Pylance 설정
+
+# Python 경로 설정
+extraPaths = ["../ai-engine-dev"]
+
+# 타입 체크 레벨
+typeCheckingMode = "basic"
+
+# 경고 무시
+reportMissingImports = false
+reportMissingModuleSource = false
+reportOptionalImport = false
+
+[tool.black]
+# 코드 포맷터 설정
+line-length = 120
+target-version = ['py38', 'py39', 'py310']
+
+[tool.isort]
+# 임포트 정렬 설정
+profile = "black"
+line_length = 120
+known_third_party = ["prd_generation_prompts", "meeting_analysis_prompts"]
+known_first_party = ["ai_engine_dev"]
+skip_glob = ["venv/*", ".venv/*"]
+
+[tool.mypy]
+# 타입 체커 설정
+python_version = "3.8"
+ignore_missing_imports = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = false

@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 글로벌 리셋 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 베이스 스타일 */
+@layer base {
+  html {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-neutral-50 text-neutral-900 leading-relaxed;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+
+  /* 포커스 스타일 개선 */
+  *:focus {
+    outline: 2px solid theme('colors.brand.400');
+    outline-offset: 2px;
+  }
+
+  /* 스크롤바 스타일링 */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-neutral-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-neutral-300 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-neutral-400;
+  }
+}
+
+/* 컴포넌트 스타일 */
+@layer components {
+  /* 커스텀 버튼 스타일 */
+  .btn-primary {
+    @apply bg-brand-500 text-white px-4 py-2 rounded-xl font-medium transition-all duration-200 hover:bg-brand-600 focus:ring-2 focus:ring-brand-100 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-neutral-700 px-4 py-2 rounded-xl font-medium border border-neutral-200 transition-all duration-200 hover:bg-neutral-50 focus:ring-2 focus:ring-neutral-100 active:scale-95;
+  }
+
+  /* 커스텀 인풋 스타일 */
+  .input-field {
+    @apply w-full px-4 py-3 border border-neutral-200 rounded-xl bg-white text-neutral-900 placeholder-neutral-500 transition-all duration-200 focus:border-brand-400 focus:ring-2 focus:ring-brand-100;
+  }
+
+  /* 카드 스타일 */
+  .card {
+    @apply bg-white rounded-2xl p-6 shadow-soft border border-neutral-200;
+  }
+
+  .card-hover {
+    @apply transition-all duration-200 hover:shadow-medium hover:-translate-y-1;
+  }
+
+  /* 상태 배지 */
+  .badge-success {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-lg text-xs font-medium bg-accent-green/10 text-accent-green;
+  }
+
+  .badge-warning {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-lg text-xs font-medium bg-accent-amber/10 text-accent-amber;
+  }
+
+  .badge-error {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-lg text-xs font-medium bg-accent-red/10 text-accent-red;
+  }
+
+  .badge-info {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-lg text-xs font-medium bg-accent-blue/10 text-accent-blue;
+  }
+}
+
+/* 유틸리티 */
+@layer utilities {
+  /* 텍스트 그라디언트 */
+  .text-gradient {
+    @apply bg-gradient-to-r from-brand-500 to-brand-700 bg-clip-text text-transparent;
+  }
+
+  /* 글래스모피즘 효과 */
+  .glass {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  /* 애니메이션 유틸리티 */
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+}
+
+/* 키프레임 애니메이션 */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px theme('colors.brand.400'), 0 0 10px theme('colors.brand.400'), 0 0 15px theme('colors.brand.400');
+  }
+  to {
+    box-shadow: 0 0 10px theme('colors.brand.500'), 0 0 20px theme('colors.brand.500'), 0 0 30px theme('colors.brand.500');
+  }
+}
+
+/* 메인 앱 컨테이너 */
+.App {
+  @apply min-h-screen bg-neutral-50 font-sans antialiased;
+}
+
+/* 로딩 스피너 */
+.loading-spinner {
+  @apply animate-spin rounded-full border-2 border-neutral-200 border-t-brand-500;
+}
+
+/* 반응형 유틸리티 */
+@media (max-width: 768px) {
+  .mobile-hidden {
+    @apply hidden;
+  }
+}
+
+/* 다크 모드 준비 (향후 구현용) */
+@media (prefers-color-scheme: dark) {
+  /* 다크 모드 스타일은 추후 구현 */
+} 

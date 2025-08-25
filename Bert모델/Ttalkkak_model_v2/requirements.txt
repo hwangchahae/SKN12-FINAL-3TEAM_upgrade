@@ -1,0 +1,9 @@
+﻿torch==2.6.0              # PyTorch (GPU 버전)
+transformers==4.53.2      # HuggingFace Transformers
+datasets==2.14.4          # HuggingFace Datasets
+scikit-learn==1.6.1       # 모델 평가용
+pandas==2.2.2             # CSV 입출력·DataFrame
+numpy<2.0                 # 수치연산
+tensorboard==2.18.0       # 학습 모니터링 (TensorBoard)
+accelerate==1.8.1         # (선택) 분산/FP16 학습 지원
+gdown==5.2.0              # 구글 드라이브 다운로드 스크립트

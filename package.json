@@ -1,0 +1,102 @@
+{
+  "name": "ddalkkak",
+  "version": "1.0.0",
+  "description": "지능형 AI Agent Slack App - IT 업무 자동화 플랫폼",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend/slack-app",
+    "frontend/web-dashboard",
+    "frontend/chrome-extension"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm run install:backend && npm run install:ai && npm run install:frontend",
+    "install:backend": "cd backend && npm install",
+    "install:ai": "cd ai-engine && pip install -r requirements.txt",
+    "install:frontend": "cd frontend/slack-app && npm install && cd ../web-dashboard && npm install && cd ../chrome-extension && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:ai\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:ai": "cd ai-engine && python -m uvicorn main:app --reload --host 0.0.0.0 --port 8001",
+    "dev:frontend": "concurrently \"cd frontend/slack-app && npm run dev\" \"cd frontend/web-dashboard && npm run dev\"",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend/slack-app && npm run build && cd ../web-dashboard && npm run build && cd ../chrome-extension && npm run build",
+    "test": "npm run test:backend && npm run test:ai && npm run test:frontend",
+    "test:backend": "cd backend && npm test",
+    "test:ai": "cd ai-engine && python -m pytest",
+    "test:frontend": "cd frontend/slack-app && npm test && cd ../web-dashboard && npm test",
+    "lint": "npm run lint:backend && npm run lint:frontend",
+    "lint:backend": "cd backend && npm run lint",
+    "lint:frontend": "cd frontend/slack-app && npm run lint && cd ../web-dashboard && npm run lint",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "db:migrate": "cd backend && npm run db:migrate",
+    "db:seed": "cd backend && npm run db:seed",
+    "db:reset": "cd backend && npm run db:reset",
+    "deploy:dev": "npm run build && npm run docker:build && npm run docker:up",
+    "deploy:staging": "NODE_ENV=staging npm run build && docker-compose -f docker-compose.staging.yml up -d",
+    "deploy:prod": "NODE_ENV=production npm run build && docker-compose -f docker-compose.prod.yml up -d",
+    "clean": "npm run clean:backend && npm run clean:frontend && npm run clean:ai",
+    "clean:backend": "cd backend && rm -rf node_modules dist",
+    "clean:frontend": "cd frontend/slack-app && rm -rf node_modules dist && cd ../web-dashboard && rm -rf node_modules dist && cd ../chrome-extension && rm -rf node_modules dist",
+    "clean:ai": "cd ai-engine && rm -rf __pycache__ .pytest_cache",
+    "format": "prettier --write \"**/*.{js,ts,tsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{js,ts,tsx,json,md}\"",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "concurrently": "^8.2.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/ddalkkak.git"
+  },
+  "keywords": [
+    "slack-app",
+    "ai",
+    "automation",
+    "meeting",
+    "task-management",
+    "stt",
+    "whisper",
+    "qwen3",
+    "notion",
+    "jira"
+  ],
+  "author": "DdalKkak Team",
+  "license": "MIT",
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run test"
+    }
+  },
+  "dependencies": {
+    "@types/multer": "^2.0.0",
+    "@types/node-fetch": "^2.6.12",
+    "form-data": "^4.0.3",
+    "multer": "^2.0.1",
+    "node-fetch": "^2.7.0"
+  }
+}

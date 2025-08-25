@@ -1,0 +1,12 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Logo Icon -->
+  <g transform="translate(10, 10)">
+    <!-- Yellow Star -->
+    <path d="M20 5 L25 15 L35 15 L27.5 22.5 L30 32.5 L20 27.5 L10 32.5 L12.5 22.5 L5 15 L15 15 Z" fill="#C8E986" stroke="none"/>
+    <!-- Green Arrow -->
+    <path d="M25 20 L35 20 L30 25 Z" fill="#4A5D3A" stroke="none"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="55" y="25" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#1F2937">TtalKkak</text>
+</svg>
