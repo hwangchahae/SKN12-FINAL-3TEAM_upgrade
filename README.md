@@ -79,7 +79,6 @@
     <td>
       <img src="https://img.shields.io/badge/openai-412991?style=for-the-badge&logo=openai&logoColor=white">
       <img src="https://img.shields.io/badge/Qwen3-1ED760?style=for-the-badge&logo=alibabadotcom&logoColor=white">
-      <img src="https://img.shields.io/badge/RunPod-46C1F6?style=for-the-badge"/>
       <img src="https://img.shields.io/badge/Klue/BERT-F1007E?style=for-the-badge&logo=">
       <img src="https://img.shields.io/badge/WhisperX-8A2BE2?style=for-the-badge&logo=openai&logoColor=white">
       <img src="https://img.shields.io/badge/gpt--4o-BC52EE?style=for-the-badge&logo=openai&logoColor=white">
