@@ -47,26 +47,91 @@
 
 ---
 ## 기술 스텍
-| Category              | Badges |
-|------------------------|--------|
-| Programming Languages | <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white"> <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"> <img src="https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=CSS&logoColor=white"> <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> |
-| Frameworks & Libraries | <img src="https://img.shields.io/badge/fastapi-009688?style=for-the-badge&logo=fastapi&logoColor=white"> <img src="https://img.shields.io/badge/prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white"> <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"> <img src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white"> <img src="https://img.shields.io/badge/scipy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white"> <img src="https://img.shields.io/badge/scikitlearn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"> |
-| AI & ML             | <img src="https://img.shields.io/badge/openai-412991?style=for-the-badge&logo=openai&logoColor=white"> <img src="https://img.shields.io/badge/Qwen3-1ED760?style=for-the-badge&logo=alibabadotcom&logoColor=white"> <img src="https://img.shields.io/badge/RunPod-46C1F6?style=for-the-badge"/> <img src="https://img.shields.io/badge/KoBERT-F1007E?style=for-the-badge&logo="> <img src="https://img.shields.io/badge/WhisperX-8A2BE2?style=for-the-badge&logo=openai&logoColor=white"> <img src="https://img.shields.io/badge/gpt--4o-BC52EE?style=for-the-badge&logo=openai&logoColor=white"> <img src="https://img.shields.io/badge/tensorflow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"> <img src="https://img.shields.io/badge/huggingface-FFD21E?style=for-the-badge&logo=huggingface&logoColor=white"> <img src="https://img.shields.io/badge/pytorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"> |
-| Databases & Cache   | <img src="https://img.shields.io/badge/postgresql-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"> <img src="https://img.shields.io/badge/redis-FF4438?style=for-the-badge&logo=redis&logoColor=white"> |
-| Infra & Tools       | <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/amazonaws-orange?style=for-the-badge&logo=amazonaws&logoColor=white"> <img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"> <img src="https://img.shields.io/badge/runpod-DDDF72?style=for-the-badge&logo=runpod&logoColor=white">
+
+<table align="center">
+  <tr>
+    <th>Category</th>
+    <th>Technologies</th>
+  </tr>
+  <tr>
+    <td><b>Programming Languages</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white">
+      <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">
+      <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+      <img src="https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=CSS&logoColor=white">
+      <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Frameworks & Libraries</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/fastapi-009688?style=for-the-badge&logo=fastapi&logoColor=white">
+      <img src="https://img.shields.io/badge/prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white">
+      <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white">
+      <img src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white">
+      <img src="https://img.shields.io/badge/scipy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white">
+      <img src="https://img.shields.io/badge/scikitlearn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white">
+    </td>
+  </tr>
+  <tr>
+    <td><b>AI & ML</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/openai-412991?style=for-the-badge&logo=openai&logoColor=white">
+      <img src="https://img.shields.io/badge/Qwen3-1ED760?style=for-the-badge&logo=alibabadotcom&logoColor=white">
+      <img src="https://img.shields.io/badge/RunPod-46C1F6?style=for-the-badge"/>
+      <img src="https://img.shields.io/badge/Klue/BERT-F1007E?style=for-the-badge&logo=">
+      <img src="https://img.shields.io/badge/WhisperX-8A2BE2?style=for-the-badge&logo=openai&logoColor=white">
+      <img src="https://img.shields.io/badge/gpt--4o-BC52EE?style=for-the-badge&logo=openai&logoColor=white">
+      <img src="https://img.shields.io/badge/tensorflow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white">
+      <img src="https://img.shields.io/badge/huggingface-FFD21E?style=for-the-badge&logo=huggingface&logoColor=white">
+      <img src="https://img.shields.io/badge/pytorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Databases & Cache</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/postgresql-4169E1?style=for-the-badge&logo=postgresql&logoColor=white">
+      <img src="https://img.shields.io/badge/redis-FF4438?style=for-the-badge&logo=redis&logoColor=white">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Infra & Tools</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+      <img src="https://img.shields.io/badge/amazonaws-orange?style=for-the-badge&logo=amazonaws&logoColor=white">
+      <img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
+      <img src="https://img.shields.io/badge/runpod-DDDF72?style=for-the-badge&logo=runpod&logoColor=white">
+    </td>
+  </tr>
+</table>
 
 ---
 ## 데이터
 ### 1) 수집 대상 & 규모 </br>
 
-국회 상임·특별위원회 회의록: 100개 세션 / 약 138,209 발화, 정제 JSONL</br>
-→ 공식 회의 발언을 timestamp, timestamp_order, speaker, text로 구조화. </br> 공개 회의록으로 개인정보 민감정보 없음. </br>
-</br>
-AMI 다자 대화록(한글 번역): 154개 세션 / 90,641 발화, 정제 JSONL </br>
-→ 시간 순/화자 구분 완전, LLM 요약·역할분류·흐름분석에 적합. </br>
-</br>
-ICSI 다자 대화록(한글 번역): 75개 세션 / 94,990 발화, 정제 JSONL </br>
-→ 일부 빈 발화 제거 규칙 적용, 나머지 정상 구조화. </br>
+<table align="center">
+  <tr>
+    <th>데이터셋</th>
+    <th>규모</th>
+    <th>특징</th>
+  </tr>
+  <tr>
+    <td><b>국회 상임·특별위원회 회의록</b></td>
+    <td>100개 세션 / 약 138,209 발화</td>
+    <td>공식 회의 발언을 timestamp, timestamp_order, speaker, text로 구조화</td>
+  </tr>
+  <tr>
+    <td><b>AMI 다자 대화록(한글 번역)</b></td>
+    <td>154개 세션 / 90,641 발화</td>
+    <td>시간 순/화자 구분 완전, LLM 요약·역할분류·흐름분석에 적합</td>
+  </tr>
+  <tr>
+    <td><b>ICSI 다자 대화록(한글 번역)</b></td>
+    <td>75개 세션 / 94,990 발화</td>
+    <td>일부 빈 발화 제거 규칙 적용, 나머지 정상 구조화</td>
+  </tr>
+</table>
 
 ### 2) 공통 스키마 (정제 후 JSONL) </br>
 
@@ -80,24 +145,24 @@ AMI/ICSI는 구어체·짧은 발화 다수 → 역할 분류/대화흐름 모�
 
 ### 3) 전처리/정합성 </br>
 
-형식 통일: PDF/XML/CSV → JSONL로 변환 (정규표현식 + 스크립트) </br>
-결측/노이즈 처리 </br>
-국회: speaker/text 누락 시 행 제거. </br>
-AMI: 구조 완전, 추가 보간 불필요. </br> 
-ICSI: "@", ".", "" 등 빈/무의미 발화 제거.  </br>
-품질 점검: 시간/화자/내용 필드 누락 자동 점검, 중복 제거.  </br>
+- **형식 통일**: PDF/XML/CSV → JSONL로 변환 (정규표현식 + 스크립트)
+- **결측/노이즈 처리**
+  - 국회: speaker/text 누락 시 행 제거
+  - AMI: 구조 완전, 추가 보간 불필요
+  - ICSI: "@", ".", "" 등 빈/무의미 발화 제거
+- **품질 점검**: 시간/화자/내용 필드 누락 자동 점검, 중복 제거
 
 ### 4) 저장 </br>
 
-데이터/국회 회의록 (전처리 후) </br>
-데이터/영어 회의록 (AMI Corpus, 전처리 후) </br>
-데이터/영어 회의록 (ICSI Corpus, 전처리 후) </br>
-모두 JSONL, 인코딩은(해당되는 경우) UTF-8 with BOM.  </br>
+- 데이터/국회 회의록 (전처리 후)
+- 데이터/영어 회의록 (AMI Corpus, 전처리 후)
+- 데이터/영어 회의록 (ICSI Corpus, 전처리 후)
+- 모두 JSONL, 인코딩은(해당되는 경우) UTF-8 with BOM
 
 ### 5) 라이선스/출처 </br>
 
-국회 회의록: 대한민국 국회 정보공개포털 공개 자료. </br>
-AMI/ICSI: The University of Edinburgh 공개 데이터셋(허가 라이선스 포함).  </br>
+- **국회 회의록**: 대한민국 국회 정보공개포털 공개 자료
+- **AMI/ICSI**: The University of Edinburgh 공개 데이터셋(허가 라이선스 포함)
 
 ### 데이터처리 파이프라인
 ```
@@ -114,9 +179,34 @@ Qwen3 생성 (문서화)
 ---
 ## 모델 구성
 
-| **WhisperX (음성인식)** | **BERT (노이즈 필터링)** | **Qwen3 (텍스트 생성)** |
-|-------------------------|--------------------------|-------------------------|
-| - Base Model: OpenAI Whisper base <br> - 언어: 한국어 특화 <br> - 서버: 독립 서버 (Port 8001) | - Base Model: KLUE/BERT-base <br> - Fine-tuning: Ttalkkak_model_v3.pt <br> - 분류: Binary (업무/노이즈) <br> - 정확도: 92.5% | - Models: 4B 버전 <br> - Fine-tuning: LoRA 어댑터 <br> - Quantization: 4-bit (QLoRA) <br> - 컨텍스트: 8192 토큰 |
+<div align="center">
+<table>
+  <tr>
+    <th>WhisperX<br/>(음성인식)</th>
+    <th>BERT<br/>(노이즈 필터링)</th>
+    <th>Qwen3<br/>(텍스트 생성)</th>
+  </tr>
+  <tr>
+    <td>
+      • Base Model: OpenAI Whisper base<br/>
+      • 언어: 한국어 특화<br/>
+      • 서버: 독립 서버 (Port 8001)
+    </td>
+    <td>
+      • Base Model: KLUE/BERT-base<br/>
+      • Fine-tuning: Ttalkkak_model_v3.pt<br/>
+      • 분류: Binary (업무/노이즈)<br/>
+      • 정확도: 92.5%
+    </td>
+    <td>
+      • Models: 4B 버전<br/>
+      • Fine-tuning: LoRA 어댑터<br/>
+      • Quantization: 4-bit (QLoRA)<br/>
+      • 컨텍스트: 8192 토큰
+    </td>
+  </tr>
+</table>
+</div>
 
 
 ---
@@ -128,7 +218,11 @@ Qwen3 생성 (문서화)
 ---
 ## 시스템 아키텍쳐
 ### **TtalKkak AI 프로젝트 관리 시스템**의 전체 아키텍처 </br>
-클라이언트 → 백엔드 API → AI 처리 엔진 → 데이터 레이어 → 비즈니스 서비스 → 외부 연동 API </br>
+
+<div align="center">
+  <p>클라이언트 → 백엔드 API → AI 처리 엔진 → 데이터 레이어 → 비즈니스 서비스 → 외부 연동 API</p>
+</div>
+
 
 ![시스템 아키텍처](https://raw.githubusercontent.com/SKNETWORKS-FAMILY-AICAMP/SKN12-FINAL-3TEAM/refs/heads/main/%EC%82%B0%EC%B6%9C%EB%AC%BC/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/img/drawio_27.webp)
 ### 주요 구성 요소
