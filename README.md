@@ -295,38 +295,46 @@ Qwen3 생성 (문서화)
 <table>
   <tr>
     <td align="center">
-      <h3>평균 처리 시간</h3>
-      <b>약 5분</b>
+      <h3>:white_square_button:</h3>
+      <b>평균 처리 시간</b><br/>
+      약 5분
     </td>
     <td align="center">
-      <h3>STT 지연 시간</h3>
-      <b>약 1분</b>
+      <h3>:white_square_button:</h3>
+      <b>STT 지연 시간</b><br/>
+      약 1분
     </td>
     <td align="center">
-      <h3>LLM 처리</h3>
-      <b>약 3분</b>
+      <h3>:white_square_button:</h3>
+      <b>LLM 처리</b><br/>
+      약 3분
     </td>
     <td align="center">
-      <h3>Task 분석 지연</h3>
-      <b>약 1분</b>
+      <h3>:white_square_button:</h3>
+      <b>Task 분석 지연</b><br/>
+      약 1분
     </td>
   </tr>
   <tr>
     <td align="center">
-      <h3>YARN 컨텍스트</h3>
-      <b>131k 토큰 입력</b>
+      <h3>:white_square_button:</h3>
+      <b>YARN 컨텍스트</b><br/>
+      131k 토큰 입력
     </td>
     <td align="center">
-      <h3>동시 처리</h3>
-      <b>10개 세션</b>
+      <h3>:white_square_button:</h3>
+      <b>동시 처리</b><br/>
+      10개 세션
     </td>
     <td align="center">
-      <h3>정확도</h3>
-      <b>92.5%</b>
+      <h3>:white_square_button:</h3>
+      <b>정확도</b><br/>
+      92.5%
     </td>
     <td align="center">
-      <h3>처리 용량</h3>
-      <b>100MB/세션</b>
+      <h3>:white_square_button:</h3>
+      <b>처리 용량</b><br/>
+      100MB/세션
     </td>
   </tr>
 </table>
