@@ -180,17 +180,17 @@ Task 분석 지연: 약 1분 </br>
 
 <div align="center">
 
-
+### 랜딩페이지
   <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN12-FINAL-3TEAM/blob/main/%EC%82%B0%EC%B6%9C%EB%AC%BC/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/img/image.jpg?raw=true">
-    <b><랜딩페이지></b><br>
-</br>
 
+</br>
+### 대시보드
   <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN12-FINAL-3TEAM/blob/main/%EC%82%B0%EC%B6%9C%EB%AC%BC/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/img/%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C.png?raw=true">
-    <b><대시보드></b><br>
-</br>
 
+</br>
+### 시연영상
   <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN12-FINAL-3TEAM/blob/main/%EC%82%B0%EC%B6%9C%EB%AC%BC/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/img/%EC%8B%9C%EC%97%B0%EC%98%81%EC%83%81test.gif?raw=true">
-    <b><시연영상></b><br>
+</br>
 <a href="https://youtu.be/q8rb3CaFigI">
   <img src="https://img.shields.io/badge/▶️_시연_영상_자세히_보기-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
 </a>
@@ -200,35 +200,34 @@ Task 분석 지연: 약 1분 </br>
 ---
 ## 💬 팀원 한 줄 회고
 
+<div align="center">
 <table>
   <tr>
-    <th>이름</th>
+    <th width="120">이름</th>
     <th>한 줄 회고</th>
   </tr>
   <tr>
-    <td><nobr><b>박슬기</b></nobr></td>
-    <td>큰 프로젝트를 처음부터 끝까지 기획하고 업무분배하고 다 같이 만들어나가는 작업이 즐거웠습니다.</br> 아쉬운 부분도 많았지만 그것마저 경험삼겠습니다.</br> 강사님 매니저님 우리 팀원들 모두 정말 고생많으셨습니다! 감사합니다!</td>
+    <td><b>박슬기</b></td>
+    <td align="left">큰 프로젝트를 처음부터 끝까지 기획하고 업무분배하고 다 같이 만들어나가는 작업이 즐거웠습니다.<br/> 아쉬운 부분도 많았지만 그것마저 경험삼겠습니다.<br/> 강사님 매니저님 우리 팀원들 모두 정말 고생많으셨습니다! 감사합니다!</td>
   </tr>
   <tr>
-    <td><nobr><b>노명구</b></nobr></td>
-    <td>큰 프로젝트를 맡아서 다 같이 협업하는 과정을 경험하며, 많은 것을 배우고,좋은 경험이 된 것 같습니다. 
-저희 팀 최고입니다!</td>
+    <td><b>노명구</b></td>
+    <td align="left">큰 프로젝트를 맡아서 다 같이 협업하는 과정을 경험하며, 많은 것을 배우고,좋은 경험이 된 것 같습니다. 저희 팀 최고입니다!</td>
   </tr>
   <tr>
-    <td><nobr><b>이주영</b></nobr></td>
-    <td>프로젝트에서 주로 프론트엔드에 집중하다 보니 다른 역할을 깊게 경험하지 못한 점은 조금 아쉬웠습니다.</br> 하지만 과정 자체는 즐겁고 의미 있었으며, 무엇보다 팀원들 덕분에 2달간의 여정을 성공적으로 마무리할 수 있었습니다.</br> 긴 시간 동안 함께 달려온 우리 팀원들, 진심으로 고생 많으셨습니다!</td>
+    <td><b>이주영</b></td>
+    <td align="left">프로젝트에서 주로 프론트엔드에 집중하다 보니 다른 역할을 깊게 경험하지 못한 점은 조금 아쉬웠습니다.<br/> 하지만 과정 자체는 즐겁고 의미 있었으며, 무엇보다 팀원들 덕분에 2달간의 여정을 성공적으로 마무리할 수 있었습니다.<br/> 긴 시간 동안 함께 달려온 우리 팀원들, 진심으로 고생 많으셨습니다!</td>
   </tr>
   <tr>
-    <td><nobr><b>이준석</b></nobr></td>
-    <td></td>
+    <td><b>이준석</b></td>
+    <td align="left">-</td>
   </tr>
   <tr>
-    <td><nobr><b>황차해</b></nobr></td>
-    <td>아쉬운 부분이 있지만, 여러 버전의 모델을 적용하고 결과를 확인한 후 낮은 모델의 성능을 끌어올린 부분은 매우 흥미로웠습니다.</br> 이번 프로젝트로 많은 경험을 얻을 수 있었습니다. 우리 팀원들 모두 너무 수고하셨습니다!</td>
+    <td><b>황차해</b></td>
+    <td align="left">아쉬운 부분이 있지만, 여러 버전의 모델을 적용하고 결과를 확인한 후 낮은 모델의 성능을 끌어올린 부분은 매우 흥미로웠습니다.<br/> 이번 프로젝트로 많은 경험을 얻을 수 있었습니다. 우리 팀원들 모두 너무 수고하셨습니다!</td>
   </tr>
 </table>
-
-
+</div>
 
 
 ---
