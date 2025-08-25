@@ -170,10 +170,47 @@ Slack, Notion, Jira 등 외부 API와 연동되어 회의록/업무로 자동 �
 결과 문서는 GPU 클러스터와 캐시 서버를 활용하여 최적화된 속도로 생성 </br>
 
 ### 5️. 시스템 성능 지표 </br>
-평균 처리 시간: 약 5분 </br>
-STT 지연 시간: 약 1분 </br> 
-LLM 처리 : 약 3분 </br>
-Task 분석 지연: 약 1분 </br>
+
+<div align="center">
+<table>
+  <tr>
+    <td align="center">
+      <h3>평균 처리 시간</h3>
+      <b>약 5분</b>
+    </td>
+    <td align="center">
+      <h3>STT 지연 시간</h3>
+      <b>약 1분</b>
+    </td>
+    <td align="center">
+      <h3>LLM 처리</h3>
+      <b>약 3분</b>
+    </td>
+    <td align="center">
+      <h3>Task 분석 지연</h3>
+      <b>약 1분</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <h3>YARN 컨텍스트</h3>
+      <b>131k 토큰 입력</b>
+    </td>
+    <td align="center">
+      <h3>동시 처리</h3>
+      <b>10개 세션</b>
+    </td>
+    <td align="center">
+      <h3>정확도</h3>
+      <b>92.5%</b>
+    </td>
+    <td align="center">
+      <h3>처리 용량</h3>
+      <b>100MB/세션</b>
+    </td>
+  </tr>
+</table>
+</div>
 
 ---
 ## 실행 화면
