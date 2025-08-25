@@ -178,25 +178,23 @@ Task 분석 지연: 약 1분 </br>
 ---
 ## 실행 화면
 
-<p align="center">
+<div align="center">
+
+
   <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN12-FINAL-3TEAM/blob/main/%EC%82%B0%EC%B6%9C%EB%AC%BC/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/img/image.jpg?raw=true">
     <b><랜딩페이지></b><br>
-</p>
-
 </br>
 
-<p align="center">
   <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN12-FINAL-3TEAM/blob/main/%EC%82%B0%EC%B6%9C%EB%AC%BC/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/img/%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C.png?raw=true">
     <b><대시보드></b><br>
-</p>
-
 </br>
 
-
-<p align="center">
-  <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN12-FINAL-3TEAM/blob/main/%EC%82%B0%EC%B6%9C%EB%AC%BC/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/img/demo.gif?raw=true">
-    <b><시연영상상></b><br>
-</p>
+  <img src="https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN12-FINAL-3TEAM/blob/main/%EC%82%B0%EC%B6%9C%EB%AC%BC/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/img/%EC%8B%9C%EC%97%B0%EC%98%81%EC%83%81test.gif?raw=true">
+    <b><시연영상></b><br>
+<a href="https://youtu.be/q8rb3CaFigI">
+  <img src="https://img.shields.io/badge/▶️_시연_영상_자세히_보기-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
+</a>
+</div>
 
 
 ---
