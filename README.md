@@ -7,7 +7,7 @@
 | 박슬기                  | 노명구                  | 이주영               | 이준석                  | 황차해                   |
 | ----------------------- | ----------------------- | -------------------- | ----------------------- | ------------------------ |
 | ![](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN12-FINAL-3TEAM/blob/main/%EC%82%B0%EC%B6%9C%EB%AC%BC/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/img/%EC%8A%AC%EA%B8%B0%EB%8B%98.png?raw=true)    | ![](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN12-FINAL-3TEAM/blob/main/%EC%82%B0%EC%B6%9C%EB%AC%BC/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/img/%EB%AA%85%EA%B5%AC%EB%8B%98.png?raw=true)    | ![](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN12-FINAL-3TEAM/blob/main/%EC%82%B0%EC%B6%9C%EB%AC%BC/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/img/%EC%A3%BC%EC%98%81%EB%8B%98.png?raw=true) | ![](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN12-FINAL-3TEAM/blob/main/%EC%82%B0%EC%B6%9C%EB%AC%BC/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/img/%EC%A4%80%EC%84%9D%EB%8B%98.png?raw=true)    | ![](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN12-FINAL-3TEAM/blob/main/%EC%82%B0%EC%B6%9C%EB%AC%BC/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/img/%EC%B0%A8%ED%95%B4%EB%8B%98.png?raw=true)     |
-| PM 겸 풀스택 | AI/ML 엔지니어 | 백엔드/프론트 개발자 | 데이터 엔지니어 | AI/ML 엔지니어 |
+| PM 겸 풀스택 | AI/ML 엔지니어 | 백엔드/</br>프론트 개발자 | 데이터 엔지니어 | AI/ML 엔지니어 |
 
 ---
 ## 🔍 프로젝트 개요
